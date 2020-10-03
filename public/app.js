@@ -33,10 +33,11 @@ function comparePass() {
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function, error) {
 
     //errors
-    var errorCode = error.code;
     var errorMsg = error.message;
 
     if (error) {
-
+        alert (errorMsg);
     }
+
+    console.log(error);
 }
