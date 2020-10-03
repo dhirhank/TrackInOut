@@ -1,4 +1,4 @@
-# Digital-Covid-Tracker
+# Digital-SignIn-SignOut
 
 This is an app which can be used in workplaces, or in schools as a more efficient way to track the location of students/co-workers.
 
