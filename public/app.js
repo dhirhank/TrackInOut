@@ -1,7 +1,7 @@
 //console log
 console.log(firebase)
 
-const signUpBtn = document.getElementById("SignUp");
+const signUpBtn = document.getElementById("signUp");
 signUpBtn.onclick = function(){signUp};
 
 function signup() {
