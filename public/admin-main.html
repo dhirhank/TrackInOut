@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="style.css">
+<html>
 
 <head>
 <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
@@ -29,24 +28,40 @@
 
 <h1>Digital-SignIn-SignOut</h1>
 
-<form action="checkin-checkout.html">
-        <label for="code">Room Code</label><br>
-        <input type="text" id="code" name="code" value="Enter code"><br>
-        <input type="submit" value="Enter" />
-</form><br>
+<table style="width:25%">
 
+    <tr>
+      <th>Name</th>
+      <th>Reason</th>
+      <th>Time</th>
+    </tr>
 
+    <tr>
+      <td>default-name</td>
+      <td>default-reason</td>
+      <td>default-time</td>
+    </tr>
 
-<br></br>
+  </table>
 
-<form action="login.html">
-    <input type="submit" value="Login" /> <br>
+<h2>Delete Submission</h2>
+
+<h2>Manual Submission</h2>
+  <form>
+    <input type="submit" id="Check In" name="Check In" value="Check In">
+    <input type="submit" id="Check Out" name="Check Out" value="Check Out"><br>
+
+    <label for="Name">Name:</label><br>
+    <input type="text" id="Name" name="Name"><br>
+
+    <label for="Reason">Reason:</label><br>
+    <input type="text" id="Reason" name="Reason"><br>
+
+    <label for="time">Time:</label><br>
+    <input type="time" id="time" name="time"><br><br>
+
+    <input type="submit" id="Submit" name="Submit" value="Submit">
 </form>
 
-<form action="signup.html">
-    <input type="submit" value="Signup" /> <br>
-</form>
-<!--<button>Login/Signup</button> Should take to a diff browser-->
 
 </body>
-</html>
