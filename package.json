@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Dhirhan-Kanesalingam/TrackInOut/issues"
   },
-  "homepage": "https://github.com/Dhirhan-Kanesalingam/TrackInOut#readme"
+  "homepage": "https://github.com/Dhirhan-Kanesalingam/TrackInOut#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.5.3",
+    "bootstrap": "^4.5.2",
+    "vue": "^2.6.12"
+  }
 }
