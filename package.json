@@ -1,0 +1,19 @@
+{
+  "name": "digital-signin-signout",
+  "version": "1.0.0",
+  "description": "This is an app which can be used in workplaces, or in schools as a more efficient way to track the location of students/co-workers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhirhan-Kanesalingam/TrackInOut.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhirhan-Kanesalingam/TrackInOut/issues"
+  },
+  "homepage": "https://github.com/Dhirhan-Kanesalingam/TrackInOut#readme"
+}
