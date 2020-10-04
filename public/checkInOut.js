@@ -9,20 +9,20 @@ submitButton.onclick = () => {
     var inputTime = document.getElementById("time").value;
     var inputReason = document.getElementById("Reason").value;
 
-    const rbs = document.querySelectorAll('input[name="options"]');
+    /* const rbs = document.querySelectorAll('input[name="options"]');
             let selectedValue;
             for (const rb of rbs) {
                 if (rb.checked) {
                     selectedValue = rb.value;
                     break;
                 }
-            }
+            } */
 
     db.collection('Brown').doc('test').set({
         name: inputName,
         time: inputTime,
-        reason: inputReason,
-       inOut: selectedValue
+        reason: inputReason
+       /*  inOut: selectedValue */
     });
 
 }
