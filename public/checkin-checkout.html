@@ -4,6 +4,15 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="null">
+
+<!-- Custom styles for this template -->
+<link href="signin.css" rel="stylesheet">
+
 <head>
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
@@ -33,33 +42,40 @@
 
 <body>
 
-  <main role="main" class="container">
-  <form action="index.html">
-    <img class="mb-4" src="TrackInOutLogo.png" alt="" width="250"><br>
-    
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <main role="main">
+
+
+    <div class="d-inline-flex p-2">
+    <form action="index.html">
+      <img class="mb-4" src="TrackInOutLogo.png" alt="" width="250"><br>
+
+      <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn btn-secondary active">
         <input type="radio" name="options" id="checkIn" autocomplete="off" value="in" checked> Check In
       </label>
       <label class="btn btn-secondary">
         <input type="radio" name="options" id="checkOut" autocomplete="off" value="out"> Check Out
       </label>
-    </div><br>
+    </div> -->
+      <br>
+
+      <label for="Name">Name:</label><br>
+      <input type="text" id="Name" name="Name"><br><br>
+
+      <label for="time">Time:</label><br>
+      <input type="time" id="time" name="time"><br><br>
+
+      <label for="Reason">Reason:</label><br>
+      <input type="text" id="Reason" name="Reason"><br><br>
+
+      <input type="submit" id="checkIn" name="checkIn" value="Check In">
+      <input type="submit" id="checkOut" name="checkOut" value="Check Out">
+      <!-- <input type="submit" id="Submit" name="Submit" value="Submit"> -->
+    </form>
+    </div>
 
 
-
-    <label for="Name">Name:</label><br>
-    <input type="text" id="Name" name="Name"><br>
-
-    <label for="time">Time:</label><br>
-    <input type="time" id="time" name="time"><br><br>
-
-    <label for="Reason">Reason:</label><br>
-    <input type="text" id="Reason" name="Reason"><br>
-
-    <input type="submit" id="Submit" name="Submit" value="Submit">
-  </form>
-</main>
+  </main>
 </body>
 
 </html>
