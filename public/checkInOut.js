@@ -1,25 +1,24 @@
 
-var db = firebase.firestore();
+var db = firebase.firestore(); 
+
 
 const testbtn = document.getElementById('test');
 
 testbtn.onclick = () => {
 
-/*     var inputPun = document.getElementById("testID").value;
-    var inputCategory = document.getElementById("Category").value;
-    var inputText = document.getElementById("PunText").value; */
+    async function asyncCall() {
+        const docRef = db.collection('users').doc('alovelace');
 
-    db.collection('testCollection').doc(testID).set({
-        Category: "test",
-        PunText: "test"
-    })
-        .then(function () {
-            console.log("Doc successful");
-        })
-        .catch(function (error) {
-            console.error("Error writing doc", error);
+        await docRef.set({
+            first: 'Ada',
+            last: 'Lovelace',
+            born: 1815
         });
+    }
+    asyncCall();
+
 }
+
 
 
 /* const checkInBtn = document.getElementById('checkIn');

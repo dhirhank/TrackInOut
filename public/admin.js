@@ -1,8 +1,10 @@
 console.log(firebase)
 
+var db = firebase.firestore();
+
 function admin() {
     var user = firebase.auth().currentUser;
-var email = user.email;
+    var email = user.email;
 
 var roomCode = db.collection("RoomAssign").doc(email);
 

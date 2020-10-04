@@ -1,5 +1,7 @@
 console.log(firebase)
 
+var db = firebase.firestore();
+
 const signInButton = document.getElementById('signIn');
 
 const auth = firebase.auth();
