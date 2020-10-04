@@ -25,15 +25,15 @@
   </script>
 
   <script src="app.js" defer></script>
+  <script scr="joinRoom.js" defer></script>
 
 
-  
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../../../favicon.ico">
+  <link rel="icon" href="null">
 
   <!-- Bootstrap core CSS -->
   <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,33 +42,33 @@
   <link href="signin.css" rel="stylesheet">
 
 
-  
+
 
 </head>
 
-<!-- <img src="TrackInOut_Logo_Transparent.png" alt="TrackInOut_Logo_Transparent" width="250" class="center">-->
-<body class="text-center">
-  <form class="form-signin">
-    <img class="mb-4" src="TrackInOut_Logo_Transparent.png" alt="" width="250">
-    <h1 class="h3 mb-3 font-weight-normal">Enter a Room Code</h1>
-    <label for="inputRoomCode" class="sr-only">Room Code</label>
-    <input type="text" id="inputRoomCode" class="form-control" placeholder="Room Code" required autofocus>
-
-    <button class="btn btn-lg btn-primary btn-block" id="roomSubmit" type="submit">Next</button>
-
-    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
-  </form>
-</body>
-
+<!-- <img src="TrackInOutLogo.png" alt="TrackInOut_Logo_Transparent" width="250" class="center">-->
 
 <body>
-  <form action="checkin-checkout.html">
-    <label for="code">Room Code</label><br>
-    <input type="text" id="code" name="code" value="Enter code"><br>
-    <input type="submit" value="Enter" />
-  </form><br>
 
-  <!-- <div class="input-group mb-3 col-md-10">
+<div class="text-center">
+  <form class="form-signin" form action="checkin-checkout.html">
+    <img class="mb-4" src="TrackInOutLogo.png" alt="" width="250">
+    <h1 class="h3 mb-3 font-weight-normal">Enter a Room Code</h1>
+    <label for="inputRoomCode" class="sr-only">Room Code</label>
+    <input type="text" id="inputRoomCode" class="mb-2 form-control" name="roomCode" placeholder="Room Code" required
+      autofocus>
+    <button class="btn btn-lg btn-dark btn-block" id="roomSubmit" type="submit">Next</button>
+    <!--<p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>-->
+    <button class="btn btn-lg btn-link btn-block botButton" id="signIn"> Admin: Sign Up/In</button>
+  </form>
+</div>
+
+
+</body>
+
+</html>
+
+<!-- <div class="input-group mb-3 col-md-10">
     <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
       aria-describedby="button-addon2">
     <div class="input-group-append">
@@ -76,20 +76,12 @@
     </div> 
   </div>-->
 
-
-  <button id="signIn"> Sign Up/In With Google</button>
-
-  <!-- <form action="login.html">
+<!-- <form action="login.html">
     <input type="submit" value="Login" /> <br>
 </form> -->
 
-  <!-- <form action="signup.html">
+<!-- <form action="signup.html">
     <input type="submit" value="Signup" id="signUp"/> <br>
 </form> -->
 
-  <!--<button>Login/Signup</button> Should take to a diff browser-->
-</body>
-
-
-
-</html>
+<!--<button>Login/Signup</button> Should take to a diff browser-->

@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html>
 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
 <head>
-<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
 
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyCoEd4JV1Y0OcytTT55R1YzPfi5SE046R0",
-    authDomain: "covid-tracking-f1c6a.firebaseapp.com",
-    databaseURL: "https://covid-tracking-f1c6a.firebaseio.com",
-    projectId: "covid-tracking-f1c6a",
-    storageBucket: "covid-tracking-f1c6a.appspot.com",
-    messagingSenderId: "1059886291309",
-    appId: "1:1059886291309:web:bbefd73a1f09823815e264",
-    measurementId: "G-7HW9VY8LKN"
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCoEd4JV1Y0OcytTT55R1YzPfi5SE046R0",
+      authDomain: "covid-tracking-f1c6a.firebaseapp.com",
+      databaseURL: "https://covid-tracking-f1c6a.firebaseio.com",
+      projectId: "covid-tracking-f1c6a",
+      storageBucket: "covid-tracking-f1c6a.appspot.com",
+      messagingSenderId: "1059886291309",
+      appId: "1:1059886291309:web:bbefd73a1f09823815e264",
+      measurementId: "G-7HW9VY8LKN"
     };
-  firebase.initializeApp(firebaseConfig);
-</script>
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
-<script src="app.js" defer></script>
+  <script src="checkInOut.js" defer></script>
 
 </head>
 
 <body>
 
-<h1>Digital-SignIn-SignOut</h1>
+  <h1>Digital-SignIn-SignOut</h1>
 
-<form>
-    <input type="submit" id="Check In" name="Check In" value="Check In">
-    <input type="submit" id="Check Out" name="Check Out" value="Check Out"><br>
+  <form>
+    <!-- <a class="btn btn-outline-primary btn-lg active" id="CheckIn">Check In</a>
+    <a class="btn btn-outline-secondary btn-lg active" id="CheckOut">Check Out</a><br> -->
+
+    <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+      </label>
+    </div><br> -->
+
+    <a type="button" id="Check In" name="Check In" role="button" aria-pressed="true" value="Check In" class="btn btn-secondary">Check In</a>
+    <a type="button" id="Check Out" name="Check Out" role="button" aria-pressed="true" value="Check Out" class="btn btn-success">Check Out</a>
+    
+    
+    <!-- <input type=""  >
+    <input type=""  ><br> -->
 
     <label for="Name">Name:</label><br>
     <input type="text" id="Name" name="Name"><br>
@@ -43,5 +65,5 @@
 
     <input type="submit" id="Submit" name="Submit" value="Submit">
 
-</form>
+  </form>
 </body>
