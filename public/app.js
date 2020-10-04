@@ -16,31 +16,31 @@ signInButton.onclick = () => {
     auth.signInWithPopup(provider).then(function(result) {
 
         var user = firebase.auth().currentUser;
+        var emailo;
 
         if (user != null) {
             user.providerData.forEach(function (profile) {
                 var email = profile.email;
+                emailo = email;
             });
         }
 
-        var code = '';
 
-        function generateKey() {
-            var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            var cLength = characters.length;
-    
-            //generating room code
-            for (var i = 0; i <= 6; i++) {
-                code += characters.charAt(Math.floor(Math.random() * cLength));
+        function genKey() {
+            var result = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            var charactersLength = characters.length;
+            for ( var i = 0; i < 6; i++ ) {
+               result += characters.charAt(Math.floor(Math.random() * charactersLength));
             }
-        } 
+            return result;
+         }
         
-        alert(code);
-        //creating a new room
-        async function asyncCall() {
-            const docRef = db.collection(email).doc(code);
-        }
-        asyncCall();
+        //creating collection & doc
+         db.collection([emailo]).doc(genKey()).set({
+            name: dhirhan,
+            time: kevinsalingam
+         });
     }).catch(function(error) {
 
     });
