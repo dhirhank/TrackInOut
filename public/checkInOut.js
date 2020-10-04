@@ -1,64 +1,76 @@
 
-var db = firebase.firestore(); 
+var db = firebase.firestore();
 
 
-const testbtn = document.getElementById('test');
+// var inState = true;
+// var outState = false;
+// var button = "";
 
-testbtn.onclick = () => {
 
-    async function asyncCall() {
-        const docRef = db.collection('users').doc('alovelace');
+// const submitButton = document.getElementById('Submit');
 
-        await docRef.set({
-            first: 'Ada',
-            last: 'Lovelace',
-            born: 1815
-        });
-    }
-    asyncCall();
+// const checkInBtn = document.getElementById('checkIn');
+// const checkOutBtn = document.getElementById('checkOut');
+
+// checkInBtn.onclick = () => {
+//     console.log("hello World")
+//     if(inState == true){
+//       inState = false;
+//       outState = false;  
+//     }
+    
+// }
+
+// checkOutBtn.onclick = () => {
+//     console.log("hello 112")
+//     outState = true;
+//     if(outState == false){
+//         outState = true;  
+//         inState = false;
+//       } 
+      
+// }
+
+// if(inState == true){
+//         button = checkIn;
+//     }
+
+//     else{
+//         button = checkOut;
+//     }
+
+
+
+submitButton.onclick = () => {
+      console.log(inState)
+    
+    
+      var inputName = document.getElementById("Name").value;
+      var inputTime = document.getElementById("time").value;
+      var inputReason = document.getElementById("Reason").value;
+  
+      if(inState == true){
+                button = checkIn;
+            }
+        
+            else{
+                button = checkOut;
+            }
+  
+  
+      async function asyncCall() {
+          const docRef = db.collection('Dhirhan').doc('ohohoh');
+  
+          await docRef.set({
+              tooot: [inputName, inputTime, inputReason, button]
+          });
+      }
+      asyncCall();
+
+   
 
 }
 
 
-
-/* const checkInBtn = document.getElementById('checkIn');
-const checkOutBtn = document.getElementById('checkOut');
-
-checkInBtn.onclick = () => {
-    console.log("hello World")
-    (this).button("toggle");
-
-}
-
-checkOutBtn.onclick = () => {
-    console.log("hello 112")
-    (this).button("toggle");
-
-} */
-
-
-
-
-
-
-// if(document.getElementById('Check In').onclick == function() {
-//    alert("You clicked me");
-// }​);​
-
-// if(document.getElementById('Check Out').onclick == function() {
-//    alert("You clicked me");
-// }​);​
-
-
-
-// console.log(firebase)
-
-// const signInButton = document.getElementById('signIn');
-
-// const auth = firebase.auth();
-// const provider = new firebase.auth.GoogleAuthProvider();
-
-// /// Sign in event handlers
-// signInButton.onclick = () => auth.signInWithPopup(provider);
 
 

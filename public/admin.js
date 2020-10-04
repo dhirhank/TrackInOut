@@ -1,6 +1,6 @@
-console.log(firebase)
-
 var db = firebase.firestore();
+
+console.log(firebase)
 
 function admin() {
     var user = firebase.auth().currentUser;
