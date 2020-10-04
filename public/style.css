@@ -1,8 +1,20 @@
 .center {
-  display: inline;
-  margin-left: 25%;
-  margin-right: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.centerTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .centerText {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+} */
 
 .footer {
   position: absolute;

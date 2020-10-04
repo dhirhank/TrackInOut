@@ -1,27 +1,38 @@
 //console logs
 console.log(firebase)
 
-var user = firebase.auth().currentUser;
+const signInButton = document.getElementById('signIn');
 
-if (user) {
+signInButton.onclick = () => {
+var newuser = AdditionalUserInfo.isNewUser();
+var email = user.email;
+
+if (newuser) {
     function generateKey() {
         var code = '';
         var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         var cLength = characters.length;
 
         //generating room code
-        for (var i = 0; i <= 4; i++) {
+        for (var i = 0; i <= 6; i++) {
             code += characters.charAt(Math.floor(Math.random() * cLength));
         }
 
         //creating a new room
-        db.collection("Room").doc(code).set({
+        db.collection("RoomAssign").doc(email).set({
+            roomCode: code,
         })
     }
- } else {
-    db.collection("Room").doc(code).delete().then(function() {
-        console.log("Document Deleted");
-    }).catch(function(error) {
-        console.error("Error Deleting Doc: ", error);
-    }); 
+
  } 
+}
+ 
+}
+ 
+}
+ 
+}
+ 
+}
+ 
+}

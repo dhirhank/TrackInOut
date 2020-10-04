@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 
 <head>
   <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
@@ -23,29 +23,53 @@
     firebase.initializeApp(firebaseConfig);
   </script>
 
-  <script src="app.js" defer></script>
+  <script src="admin.js" defer></script>
 
 </head>
 
 <body>
 
-    <img class="mb-4 center" src="TrackInOutLogo.png" alt="" width="250">
+  <img class="mt-4 mb-4 center" src="TrackInOutLogo.png" alt="" width="25%">
 
-  <table style="width:25%">
 
-    <tr>
-      <th>Name</th>
-      <th>Reason</th>
-      <th>Time</th>
-    </tr>
 
-    <tr>
-      <td>default-name</td>
-      <td>default-reason</td>
-      <td>default-time</td>
-    </tr>
-
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>default-first</td>
+        <td>default-last</td>
+        <td>default-time</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>default-first</td>
+        <td>default-last</td>
+        <td>default-time</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>default-first</td>
+        <td>default-last</td>
+        <td>default-time</td>
+      </tr>
+    </tbody>
   </table>
+
+  <div id="test">
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-lg btn-dark" id="newCode" type="submit">Generate Code</button>
+  </div>
 
   <!-- <h2>Delete Submission</h2>
 

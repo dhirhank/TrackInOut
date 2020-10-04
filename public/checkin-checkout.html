@@ -25,34 +25,30 @@
 
   <script src="checkInOut.js" defer></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
-  <h1>Digital-SignIn-SignOut</h1>
+  <button class="btn btn-lg btn-dark btn-block" id="test" type="submit">test</button>
 
-  <form>
-    <!-- <a class="btn btn-outline-primary btn-lg active" id="CheckIn">Check In</a>
-    <a class="btn btn-outline-secondary btn-lg active" id="CheckOut">Check Out</a><br> -->
-
-    <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <main role="main" class="container">
+  <form action="index.html">
+    <img class="mb-4" src="TrackInOutLogo.png" alt="" width="250"><br>
+    
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn btn-secondary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+        <input type="radio" name="options" id="checkIn" checked> Check In
       </label>
       <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+        <input type="radio" name="options" id="checkOut"> Check Out
       </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
-      </label>
-    </div><br> -->
+    </div><br>
 
-    <a type="button" id="Check In" name="Check In" role="button" aria-pressed="true" value="Check In" class="btn btn-secondary">Check In</a>
-    <a type="button" id="Check Out" name="Check Out" role="button" aria-pressed="true" value="Check Out" class="btn btn-success">Check Out</a>
-    
-    
-    <!-- <input type=""  >
-    <input type=""  ><br> -->
+
 
     <label for="Name">Name:</label><br>
     <input type="text" id="Name" name="Name"><br>
@@ -64,6 +60,8 @@
     <input type="time" id="time" name="time"><br><br>
 
     <input type="submit" id="Submit" name="Submit" value="Submit">
-
   </form>
+</main>
 </body>
+
+</html>

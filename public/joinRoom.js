@@ -1,14 +1,9 @@
-window.onload() = () => {
-    alert("")
-}
-
 console.log(firebase);
 
-const submitCode = document.getElementById('roomSubmit');
-var code = document.getElementById('inputRoomCode');
+const submitCode = document.getElementById('nextCode');
+var code = document.getElementById('inputRoomCode').value;
 
-submitCode.onlick = () => {
-    var check = db.collection('Room');
+submitCode.onclick = () => {
+    var check = db.collection('Rooms');
     alert(check);
-
 }
