@@ -1,14 +1,6 @@
-body {
-    background-color: powderblue;
-  }
-  h1 {
-    color: blue;
-  }
-
-label {
-    color: royalblue
-}
-
-input {
-    color: rgb(22, 136, 173)
+.center {
+  display: inline;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
 }
