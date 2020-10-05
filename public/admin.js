@@ -15,7 +15,7 @@ roomCode.get().then(function(doc) {
     } else {
         console.log("No Document Found");
     }
-}).catch(function(error) {
+3}).catch(function(error) {
     console.log("Error getting document:", error);
 });
 
