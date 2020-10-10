@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream:public/app.js
-=======
 var db = firebase.firestore();
 
 console.log(firebase)
@@ -55,4 +53,3 @@ signInButton.onclick = () => {
 }
 
 
->>>>>>> Stashed changes:public/js/app.js
