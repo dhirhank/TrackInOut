@@ -9,18 +9,20 @@ var roomCode = '';
 function getRoom() {
     var url = window.location;
     var realURL = url.href.substr(-6);
+    return realURL;
 }
 
 roomCode = getRoom();
 
-
 checkInButton.onclick = () => {
+    roomCode = getRoom();
+    console.log(roomCode);
 
     var inputName = document.getElementById("Name").value;
     var inputTime = document.getElementById("time").value;
     var inputReason = document.getElementById("Reason").value;
      
-     db.collection('Users').doc('test').collection(inputCode).doc('Dhirhan').set({
+     db.collection('Users').doc('test').collection(roomCode).doc().set({
         name: inputName,
         time: inputTime,
         reason: inputReason,
@@ -30,6 +32,8 @@ checkInButton.onclick = () => {
 }
 
 checkOutButton.onclick = () => {
+    roomCode = getRoom();
+    console.log(roomCode);
 
     var inputName = document.getElementById("Name").value;
     var inputTime = document.getElementById("time").value;
@@ -44,7 +48,7 @@ checkOutButton.onclick = () => {
                 }
             } */
 
-     db.collection('Users').doc('test').collections(inputCode).doc('Darun').set({
+     db.collection('Users').doc('test').collection(roomCode).doc().set({
         name: inputName,
         time: inputTime,
         reason: inputReason,
