@@ -48,7 +48,7 @@
   <main role="main">
 
 
-    <div class="d-inline-flex p-2">
+    <div class="text-center">
       <form action="index.html">
         <img class="mb-4" src="TrackInOutLogo.png" alt="" width="250"><br>
 
@@ -60,21 +60,38 @@
         <input type="radio" name="options" id="checkOut" autocomplete="off" value="out"> Check Out
       </label>
     </div> -->
-        <br>
 
-        <label for="Name">Name:</label><br>
-        <input type="text" id="Name" name="Name"><br><br>
+        <h1 class="h3 mb-3 font-weight-normal">Please Check In/Out</h1>
 
-        <label for="time">Time:</label><br>
-        <input type="time" id="time" name="time"><br><br>
+        <label for="Name" class="sr-only">Name</label>
+        <input type="text" id="Name" class="mb-2 form-control" name="Name" placeholder="Name" required autofocus>
 
-        <label for="Reason">Reason:</label><br>
-        <input type="text" id="Reason" name="Reason"><br><br>
+        <label for="time" class="sr-only">Time</label>
+        <input type="time" id="time" class="mb-2 form-control" name="time" placeholder="Time" required autofocus>
 
-        <input type="submit" id="checkIn" name="checkIn" value="Check In">
-        <input type="submit" id="checkOut" name="checkOut" value="Check Out">
+        <label for="Reason" class="sr-only">Reason</label>
+        <input type="text" id="Reason" class="mb-2 form-control" name="Reason" placeholder="Reason" required autofocus>
+
+       <!--  <button class="btn btn-lg btn-dark btn-block" id="checkIn" type="submit">Check In</button>
+        <button class="btn btn-lg btn-dark btn-block" id="checkOut" type="submit">Check Out</button> -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm pr-1 pl-0">
+              <button class="btn btn-lg btn-dark btn-block" id="checkIn" type="submit">In</button>
+            </div>
+            <div class="col-sm pr-0 pl-1" >
+              <button class="btn btn-lg btn-dark btn-block" id="checkOut" type="submit">Out</button>
+            </div>
+          </div>
+        </div>
+
+        <!--         <input type="submit" id="checkIn" name="checkIn" value="Check In">
+        <input type="submit" id="checkOut" name="checkOut" value="Check Out"> -->
+
         <!-- <input type="submit" id="Submit" name="Submit" value="Submit"> -->
       </form>
+
     </div>
 
 
