@@ -27,6 +27,7 @@
   </script>
 
   <script src="admin.js" defer></script>
+  <script src="downloaddata.js" defer></script>
 
   <body style="background-color:#f5f5f5;"></body>
 
@@ -38,7 +39,7 @@
 
 
 
-  <table class="table">
+  <table class="table" id="userTrackingTable">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -77,11 +78,9 @@
     </tbody>
   </table>
 
-  <div id="test">
-  </div>
-
   <div class="text-center">
     <button class="btn btn-lg btn-dark" id="newCode" type="submit">Generate Code</button>
+    <button class="btn btn-lg btn-dark" id="downloadData" type="submit">Dowload CSV</button>
   </div>
 
   <!-- <h2>Delete Submission</h2>
